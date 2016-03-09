@@ -123,7 +123,7 @@ sankeyNetwork <- function(Links, Nodes, Source, Target, Value,
     # create widget
     htmlwidgets::createWidget(name = "sankeyNetwork", x = list(links = LinksDF, 
         nodes = NodesDF, options = options), width = width, height = height, 
-        htmlwidgets::sizingPolicy(padding = 10, browser.fill = TRUE), 
+        htmlwidgets::sizingPolicy(padding = 10, browser.fill = FALSE), 
         package = "networkD3")
 }
 
